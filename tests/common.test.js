@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { normalizeUrl, extractDomain, formatDuration, groupTabs } from '../common.js';
+import { normalizeUrl, extractDomain, formatDuration, groupTabs } from '../src/common.js';
 
 describe('normalizeUrl', () => {
   it('strips the fragment', () => {

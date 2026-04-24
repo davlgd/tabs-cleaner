@@ -20,7 +20,7 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "package": "rm -f tabs-cleaner-$npm_package_version.zip && zip -r tabs-cleaner-$npm_package_version.zip manifest.json popup.html popup.js tabs.html tabs.js common.js common.css icons/ LICENSE"
+    "package": "rm -f tabs-cleaner-$npm_package_version.zip && (cd src && zip -r ../tabs-cleaner-$npm_package_version.zip manifest.json popup.html popup.js tabs.html tabs.js common.js common.css icons/) && zip -j tabs-cleaner-$npm_package_version.zip LICENSE"
   },
   "devDependencies": {
     "@eslint/js": "^9.14.0",
