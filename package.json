@@ -1,0 +1,32 @@
+{
+  "name": "tabs-cleaner",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Quick stats and cleanup for your open browser tabs.",
+  "author": "davlgd",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/davlgd/tabs-cleaner",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davlgd/tabs-cleaner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/davlgd/tabs-cleaner/issues"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "package": "rm -f tabs-cleaner-$npm_package_version.zip && zip -r tabs-cleaner-$npm_package_version.zip manifest.json popup.html popup.js tabs.html tabs.js common.js common.css icons/ LICENSE"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.14.0",
+    "eslint": "^9.14.0",
+    "globals": "^15.12.0",
+    "prettier": "^3.3.3",
+    "vitest": "^2.1.4"
+  }
+}
